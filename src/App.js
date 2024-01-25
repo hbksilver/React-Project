@@ -1,15 +1,12 @@
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
+import { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css"
 function App() {
+  const [counter, setCounter] = useState(0);
   return (
-    <>
-      <Typography variant="h4" gutterBottom>
-        Welcome to React
-      </Typography>
-      <Button variant="contained" color="primary">
-        Submit
-      </Button>
-    </>
+    <div>
+      Counter: {counter}<br/>
+      <button className="btn btn-primary" onClick={() => setCounter(()=>counter+1)}>Increment</button>
+    </div>
   );
 }
 export default App;
