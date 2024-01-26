@@ -4,7 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Sample from './Sample';
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+root.render( 
     <Sample/>
 );
 // If you want to start measuring performance in your app, pass a function
