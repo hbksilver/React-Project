@@ -1,11 +1,12 @@
-import './App.css';
+import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"
-import Ecart from './component/Ecart';
 function App() {
-  return (
-    <div className="App">
-      <Ecart />
-    </div>
-  );
+  const [counter, setCounter] = useState(0);
+  return (
+    <div>
+      Counter: {counter}<br/>
+      <button className="btn btn-primary" onClick={() => setCounter(()=>counter+1)}>Increment</button>
+    </div>
+  );
 }
 export default App;
